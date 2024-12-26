@@ -854,6 +854,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/uuid@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "@types/uuid@npm:10.0.0"
+  checksum: 10c0/9a1404bf287164481cb9b97f6bb638f78f955be57c40c6513b7655160beb29df6f84c915aaf4089a1559c216557dc4d2f79b48d978742d3ae10b937420ddac60
+  languageName: node
+  linkType: hard
+
 "@typescript-eslint/eslint-plugin@npm:8.18.2":
   version: 8.18.2
   resolution: "@typescript-eslint/eslint-plugin@npm:8.18.2"
@@ -3316,6 +3323,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"uuid@npm:^11.0.3":
+  version: 11.0.3
+  resolution: "uuid@npm:11.0.3"
+  bin:
+    uuid: dist/esm/bin/uuid
+  checksum: 10c0/cee762fc76d949a2ff9205770334699e0043d52bb766472593a25f150077c9deed821230251ea3d6ab3943a5ea137d2826678797f1d5f6754c7ce5ce27e9f7a6
+  languageName: node
+  linkType: hard
+
 "vite-tsconfig-paths@npm:^5.1.4":
   version: 5.1.4
   resolution: "vite-tsconfig-paths@npm:5.1.4"
@@ -3480,6 +3496,7 @@ __metadata:
     "@types/node": "npm:^22.10.2"
     "@types/react": "npm:^18.3.18"
     "@types/react-dom": "npm:^18.3.5"
+    "@types/uuid": "npm:^10.0.0"
     "@vitejs/plugin-react": "npm:^4.3.4"
     autoprefixer: "npm:^10.4.20"
     clsx: "npm:^2.1.1"
@@ -3497,6 +3514,7 @@ __metadata:
     tailwindcss: "npm:^3.4.17"
     typescript: "npm:~5.6.2"
     typescript-eslint: "npm:^8.18.2"
+    uuid: "npm:^11.0.3"
     vite: "npm:^6.0.5"
     vite-tsconfig-paths: "npm:^5.1.4"
   languageName: unknown
