@@ -1,50 +1,28 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Version
 
-Currently, two official plugins are available:
+- Node 20.12.2
+- React 18.3.1
+- Vite 6.0.5
+- yarn 4.5.3
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 배포 주소
 
-## Expanding the ESLint configuration
+[배포](https://yune-inc.vercel.app)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 사용한 라이브러리
 
-- Configure the top-level `parserOptions` property like this:
+- Recoil
+- TailWindCSS
+- Drag & Drop: @hello-pangea/dnd
+- file-saver
+- html2canvas
+- uuid
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 주요 기능
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- 재귀 컴포넌트로 무한확장 가능한 그룹기능
+- 그룹내 dnd 정렬 기능
+- 그룹 내 요소 추가 기능
+- 그룹 png 다운로드 기능
