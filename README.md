@@ -11,6 +11,12 @@
 
 [배포](https://yune-inc.vercel.app)
 
+## 실행
+
+```bash
+yarn dev
+```
+
 ## 사용한 라이브러리
 
 - Recoil
