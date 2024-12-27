@@ -1,17 +1,23 @@
-import { Layout } from "@/widgets/layouts/ui/main"
-import { Elements } from "@/features/elements"
 import { useRecoilValue } from "recoil"
+import { Layout } from "@/widgets/layouts"
+import { Header } from "@/widgets"
+import { directionState, Elements } from "@/features/elements"
 import { elementsState } from "@/entities/element"
 import { cn } from "@/shared/lib"
-import { directionState } from "@/features/elements/model/atoms"
+import { useDownloadAsSvg } from "@/shared/model"
 
 export const MainPage = () => {
   const elements = useRecoilValue(elementsState)
   const direction = useRecoilValue(directionState)
+  const { ref, downloadAsPng } = useDownloadAsSvg()
 
   return (
     <Layout>
-      <div className={cn("flex flex-nowrap gap-2", direction === "row" ? "flex-row" : "flex-col")}>
+      <Header downloadAsSvg={downloadAsPng} />
+      <div
+        ref={ref}
+        className={cn("flex flex-nowrap gap-2 bg-slate-100 p-2", direction === "row" ? "flex-row" : "flex-col")}
+      >
         <Elements elements={elements} />
       </div>
     </Layout>
