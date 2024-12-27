@@ -54,6 +54,7 @@ export const useElementGroup = () => {
           const selected: Elements = []
           const usedIds = new Set<string>()
 
+          // 여기서 중복 id 엘리먼트 제거
           const findElement = (elements: Elements) => {
             elements.forEach(element => {
               if (selectedIds.includes(element.id) && !usedIds.has(element.id)) {

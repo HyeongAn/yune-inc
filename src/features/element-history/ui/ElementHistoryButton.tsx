@@ -6,11 +6,12 @@ import { cn } from "@/shared/lib"
 
 export const ElementHistoryButton = memo(({ element, index, className, depth = 0 }: ElementHistoryButtonProps) => {
   switch (element.kind) {
-    case "group":
+    case "group": {
+      const groupIndex = index + depth + 1
       return (
         <div className="flex flex-col gap-2">
           <ElementLayout element={element} className={cn(className, "border-solid p-0")}>
-            <Button>Group {index + depth}</Button>
+            <Button>Group {groupIndex}</Button>
           </ElementLayout>
           {element.children.map((childElement, childIndex) => (
             <ElementHistoryButton
@@ -18,11 +19,13 @@ export const ElementHistoryButton = memo(({ element, index, className, depth = 0
               element={childElement}
               index={childIndex}
               className={className}
-              depth={depth + index + 1}
+              depth={groupIndex + childIndex + 1}
             />
           ))}
         </div>
       )
+    }
+
     case "element":
       return (
         <ElementLayout element={element} className={cn(className)}>

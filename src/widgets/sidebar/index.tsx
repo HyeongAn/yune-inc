@@ -11,5 +11,4 @@ export const Sidebar = () => {
   )
 }
 
-// todo: history
 // todo: 선택한 그룹 direction 변경

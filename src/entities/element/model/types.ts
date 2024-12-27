@@ -2,7 +2,7 @@ export interface BaseElement {
   id: string
   type: "div" | "span" | "p"
   color: string
-  direction: "row" | "column"
+  direction: "row" | "col"
 }
 
 export interface SingleElement extends BaseElement {
