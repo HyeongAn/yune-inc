@@ -12,7 +12,7 @@ export const AlignmentControls = () => {
   }
 
   return (
-    <section className={cn("flex flex-col gap-2")}>
+    <section className={cn("flex flex-col gap-2 bg-gray-700 p-2")}>
       <h3 className={cn("text-white")}>Align</h3>
       <Button id="row" onClick={toggleAlign}>
         row

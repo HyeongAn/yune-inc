@@ -1,10 +1,7 @@
-import { Element } from "@/entities/element"
-import { ElementsProps } from "@/features/elements"
-import ElementGroup from "./ElementGroup"
-
-import ElementLayout from "./ElementLayout"
 import { memo } from "react"
 import { useElementGroup } from "../model/hooks"
+import { ElementsProps, ElementLayout, ElementGroup } from "@/features/elements"
+import { Element } from "@/entities/element"
 
 export const Elements = memo(({ elements }: ElementsProps) => {
   useElementGroup()

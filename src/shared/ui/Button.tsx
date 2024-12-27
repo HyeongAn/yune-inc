@@ -9,7 +9,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({ classN
   return (
     <button
       className={cn(
-        "inline-flex items-center justify-center bg-slate-100 text-sm font-medium text-gray-800",
+        "inline-flex w-full items-center justify-center bg-slate-100 text-sm font-medium text-gray-800",
         className
       )}
       {...props}
