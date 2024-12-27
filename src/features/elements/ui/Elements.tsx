@@ -27,7 +27,7 @@ export const Elements = memo(({ elements, parentDirection }: ElementsProps) => {
           <div
             ref={provided.innerRef}
             {...provided.droppableProps}
-            className={cn("flex flex-nowrap gap-2", currentDirection === "row" ? "flex-row" : "flex-col")}
+            className={cn("flex h-fit w-fit flex-nowrap gap-2", currentDirection === "row" ? "flex-row" : "flex-col")}
           >
             {elements.map((element, index) => (
               <Draggable key={element.id} draggableId={element.id} index={index}>
