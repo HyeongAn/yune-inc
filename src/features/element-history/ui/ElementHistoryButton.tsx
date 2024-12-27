@@ -4,7 +4,7 @@ import { ElementHistoryButtonProps } from "@/features/element-history"
 import { Button } from "@/shared/ui"
 import { cn } from "@/shared/lib"
 
-export const ElementHistoryButton = memo(({ element, index, className, depth = 0 }: ElementHistoryButtonProps) => {
+export const ElementHistoryButton = ({ element, index, className, depth = 0 }: ElementHistoryButtonProps) => {
   switch (element.kind) {
     case "group": {
       const groupIndex = index + depth + 1
@@ -33,4 +33,4 @@ export const ElementHistoryButton = memo(({ element, index, className, depth = 0
         </ElementLayout>
       )
   }
-})
+}

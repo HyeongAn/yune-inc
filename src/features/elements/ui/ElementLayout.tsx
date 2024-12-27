@@ -18,7 +18,6 @@ export const ElementLayout = memo(({ children, element, className, ...props }: E
         "flex h-fit w-fit cursor-pointer flex-nowrap gap-2 border-2",
         element.kind === "element" ? "" : "border-dashed p-2",
         isSelected(element.id) ? "border-blue-500" : "border-gray-200",
-        element.direction === "row" ? "flex-row" : "flex-col",
         className
       )}
       {...props}
