@@ -1,5 +1,5 @@
 import { useRecoilState } from "recoil"
-import { addElement, createElement, elementsState } from "@/entities/element"
+import { addElement, createElement, elementsState } from "@/features/elements"
 import { Button } from "@/shared/ui"
 import { cn } from "@/shared/lib"
 

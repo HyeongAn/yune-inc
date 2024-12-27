@@ -1,6 +1,6 @@
 import { useRecoilValue } from "recoil"
 import { ElementHistoryButton } from "@/features/element-history"
-import { elementsState } from "@/entities/element"
+import { elementsState } from "@/features/elements"
 
 export const ElementHistory = () => {
   const elements = useRecoilValue(elementsState)

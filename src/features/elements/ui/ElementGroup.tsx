@@ -1,9 +1,8 @@
 import { memo } from "react"
-import { GroupElement } from "@/entities/element"
-import { ElementLayout } from "@/features/elements"
 import { Droppable, Draggable } from "@hello-pangea/dnd"
+import { GroupElement } from "@/entities/element"
+import { ElementLayout, Element } from "@/features/elements"
 import { cn } from "@/shared/lib"
-import { Element } from "@/entities/element"
 
 export const ElementGroup = memo((element: GroupElement) => {
   return (

@@ -8,8 +8,8 @@ import {
   useElementGroup,
   directionState,
   useElementDragAndDrop,
+  Element,
 } from "@/features/elements"
-import { Element } from "@/entities/element"
 import { cn } from "@/shared/lib"
 
 export const Elements = memo(({ elements, parentDirection }: ElementsProps) => {

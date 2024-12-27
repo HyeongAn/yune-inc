@@ -1,4 +1,3 @@
-import { memo } from "react"
 import { ElementLayout } from "@/features/elements"
 import { ElementHistoryButtonProps } from "@/features/element-history"
 import { Button } from "@/shared/ui"
