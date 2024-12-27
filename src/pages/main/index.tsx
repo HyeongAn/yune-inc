@@ -1,8 +1,7 @@
 import { useRecoilValue } from "recoil"
+import { elementsState } from "@/features/elements"
 import { Layout } from "@/widgets/layouts"
-import { Header } from "@/widgets"
-import { directionState, Elements } from "@/features/elements"
-import { elementsState } from "@/entities/element"
+import { Elements } from "@/features/elements"
 
 export const MainPage = () => {
   const elements = useRecoilValue(elementsState)

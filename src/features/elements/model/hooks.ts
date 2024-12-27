@@ -1,10 +1,9 @@
-import { useRecoilState } from "recoil"
-import { selectedIdState } from "./atoms"
-import { elementsState, GroupElement, Elements } from "@/entities/element"
 import { v4 as uuidv4 } from "uuid"
 import { useCallback, useEffect } from "react"
-import type { DropResult } from "react-beautiful-dnd"
-import { useSetRecoilState } from "recoil"
+import type { DropResult } from "@hello-pangea/dnd"
+import { useSetRecoilState, useRecoilState } from "recoil"
+import { elementsState, selectedIdState } from "@/features/elements"
+import { GroupElement, Elements } from "@/entities/element"
 
 export const useElementSelection = () => {
   const [selectedIds, setSelectedIds] = useRecoilState(selectedIdState)
